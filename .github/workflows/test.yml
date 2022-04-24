@@ -10,6 +10,6 @@ jobs:
     - name: Run Jest
       uses: stefanoeb/jest-action@1.0.3
     - name: Install modules
-       run: yarn
+      run: yarn
     - name: Run ESlint
-       run: yarn run eslint .
+      run: yarn run eslint .
