@@ -5,9 +5,6 @@ const FizzbuzzService = require('./lib/services/FizzbuzzService')
 const explorers = Reader.readJsonFile('explorers.json')
 
 const explorersInNode = ExplorerService.filterByMission(explorers, "node")
-console.log(explorersInNode)
-console.log(ExplorerService.getAmountOfExplorersByMission(explorers, "node"))
-console.log(ExplorerService.getExplorersUsernamesByMission(explorers, "node"))
-
-const explorer = {score: 15}
-console.log(FizzbuzzService.applyValidationInExplorer(explorer))
+const explorersInNodeAmount = ExplorerService.getAmountOfExplorersByMission(explorers, "node")
+const usernamesInNode = ExplorerService.getExplorersUsernamesByMission(explorers, "node")
+const explorersWithFizzBuzzTrick= explorers.map((exp) => FizzbuzzService.applyValidationInExplorer(exp))
