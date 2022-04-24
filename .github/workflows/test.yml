@@ -1,6 +1,6 @@
 name: Run Tests in my project every push on GitHub
 
-on: [push]
+on: [push, pull_request]
 
 jobs:
   build:
@@ -9,7 +9,3 @@ jobs:
     - uses: actions/checkout@v1
     - name: Run Jest
       uses: stefanoeb/jest-action@1.0.3
-    - name: Install modules
-      run: yarn
-    - name: Run ESlint
-      run: yarn run eslint .
