@@ -10,7 +10,7 @@ describe("Tests para ExplorerService", () => {
 
     test("Requerimiento 2: Endpoint explorers con stack x", () => {
         const name = "javascript";
-        const explorers = Reader.readJsonFile("explorers.json")
+        const explorers = Reader.readJsonFile("explorers.json");
         const explorersWithStack = ExplorerService.filterByStack(explorers, name);
         expect(explorersWithStack.length).toBe(11);
     });
