@@ -14,6 +14,6 @@ describe("Tests para ExplorerService", () => {
       explorers,
       "groovy"
     );
-    expect(explorersStack[0].name).toBe("Woopa2");
+    expect(explorersStack[0].name).toBe("Woopa1");
   });
 });
