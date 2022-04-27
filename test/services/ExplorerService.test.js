@@ -12,7 +12,7 @@ describe("Tests para ExplorerService", () => {
         const name = "javascript";
         const explorers = Reader.readJsonFile("explorers.json")
         const explorersWithStack = ExplorerService.filterByStack(explorers, name);
-        expect(explorersWithStack.lenght).toBe(11);
+        expect(explorersWithStack.length).toBe(11);
     });
 
 });
