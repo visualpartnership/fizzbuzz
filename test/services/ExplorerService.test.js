@@ -34,16 +34,14 @@ describe("Tests para ExplorerService", () => {
             ]},
             {stacks: [
                 "javascript",
-                "node",
                 "elm"
             ],
             stacks: [
                 "javascript",
                 "groovy",
-                "node"
             ]}
         ];
-        const explorersInNode = ExplorerService.filterByStack(explorers, "node");
-        expect(explorersInNode.length).toBe(1);
+        const explorersInNode = ExplorerService.filterByStack(explorers, "javascript");
+        expect(explorersInNode.length).toBe(2);
     });
 });
