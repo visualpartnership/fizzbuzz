@@ -6,5 +6,22 @@ describe("Tests para ExplorerService", () => {
         const explorersInNode = ExplorerService.filterByMission(explorers, "node");
         expect(explorersInNode.length).toBe(1);
     });
+    test("Requerimiento de filtrado por stack", () => {
+        const explorers = [{"name": "Woopa1", "stacks": [
+            "javascript",
+            "reasonML",
+            "elm"
+        ]}, 
+        {"name": "Woopa1", "stacks": [
+            "reasonML",
+            "elm"
+        ]}];
+        const explorersInStack = ExplorerService.filterByStack(explorers, "javascript");
+        expect(explorersInStack).toStrictEqual([{"name": "Woopa1", "stacks": [
+            "javascript",
+            "reasonML",
+            "elm"
+        ]}]);
+    });
 
 });
