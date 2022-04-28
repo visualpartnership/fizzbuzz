@@ -6,5 +6,11 @@ describe("Tests para ExplorerService", () => {
         const explorersInNode = ExplorerService.filterByMission(explorers, "node");
         expect(explorersInNode.length).toBe(1);
     });
-
+    
+    test("Requerimiento 4: Crear un nuevo endpoint para un cliente nuevo getExplorerByStack",() =>{
+        const stack = "javascript";
+        const explorersByStack = ExplorerService.filterByStack(explorers, stack);
+        console.log(explorersByStack);
+        expect(explorersByStack.length).toBe(11)
+    })
 });
