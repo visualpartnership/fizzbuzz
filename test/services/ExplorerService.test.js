@@ -7,4 +7,12 @@ describe("Tests para ExplorerService", () => {
         expect(explorersInNode.length).toBe(1);
     });
 
+    test("Requerimiento 2: Regresar toda la lista de explorers filtrados por un stack.", () => {
+        const explorers = [{name: "explorer1", mission: "node", stacks: ["javascript"]}, 
+        {name: "explorer2", mission: "node", stacks: ["javascript", "groovy"]}];
+
+        const explorersInJavascript = ExplorerService.filterByStack(explorers, "javascript");
+        expect(explorersInJavascript.length).toBe(2);
+    });
+
 });
