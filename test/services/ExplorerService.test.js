@@ -8,9 +8,9 @@ describe("Tests para ExplorerService", () => {
     });
 
     test("Obtener los explorers por stack", () => {
-        const explorers = [{stack: "node"}];
+        const explorers = [{stack: "node"}, {stack: "node"}, {stack: "javascript"}];
         const explorersInNode = ExplorerService.getExplorersByStack(explorers, "node");
-        expect(explorersInNode.length).toBe(1);
+        expect(explorersInNode.length).toBe(2);
     });
 
 });
