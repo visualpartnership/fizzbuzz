@@ -7,4 +7,10 @@ describe("Tests para ExplorerService", () => {
         expect(explorersInNode.length).toBe(1);
     });
 
+    test("4. Looks for stack", () => {
+        const example = [{"githubUsername": "ajolonauta15","stacks": ["javascript", "elixir", "groovy", "reasonML", "elm"]}, {"githubUsername": "ajolonauta14",  "stacks": ["elm"]}];
+        const UsernameByStacks = ExplorerService.getExplorersStacks(example, "elixir");
+        expect(UsernameByStacks[0]).toMatch(/ajolonauta15/);
+    }); 
+
 });
