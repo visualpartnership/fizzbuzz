@@ -24,9 +24,9 @@ describe("Unit Test for ExplorerController class", () => {
 	});
 
 	test("5) Test of filteByStack method", () => {
-		const stack = "reasonML"
+		const stack = "groovy"
 		const result = ExplorerController.getExplorersByStack(stack)
-		expect(result.lenght).toBe(9)
+		expect(result.length).toEqual(9)
 	});
 
 
