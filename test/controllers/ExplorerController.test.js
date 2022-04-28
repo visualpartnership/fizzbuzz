@@ -23,6 +23,11 @@ describe("Unit Test for ExplorerController class", () => {
 		expect(10).toBe(5)
 	});
 
+	test("5) Test of filteByStack method", () => {
+		const stack = "reasonML"
+		const result = Explorer.Controller.getExplorerByStack(stack)
+		expect(result.lenght).toBe(9)
+	});
 
 
 
