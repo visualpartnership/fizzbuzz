@@ -14,7 +14,7 @@ describe("Tests para ExplorerService", () => {
         const explorersStack = ExplorerService.getExplorersListByStack(explorers,"javascript");
         expect(explorersStack[0].name).toBe("Woopa1");
         expect(explorersStack[1].name).toBe("Woopa2");
-        expect(explorersStack[2].name).toBe("Woopa4");
+        expect(explorersStack[2].name).toBe("Woopa3");
     });
 
 
