@@ -7,4 +7,20 @@ describe("Tests para ExplorerService", () => {
         expect(explorersInNode.length).toBe(1);
     });
 
+    test(" get explorers by stack",() => {
+        const explorers = [
+            {
+                "name": "Woopa1",
+                "githubUsername": "ajolonauta1",
+                "score": 1,
+                "mission": "node",
+                "stacks": [
+                    "javascript",
+                    "reasonML",
+                    "elm"
+                ],
+            }];
+        const explorersByStack = ExplorerService.filterByStack(explorers,"javascript");
+        expect(explorersByStack).toStrictEqual(explorers);
+    });
 });
