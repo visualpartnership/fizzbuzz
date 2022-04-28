@@ -8,8 +8,8 @@ describe("Tests para ExplorerService", () => {
     });
     test("Explorers by stack", () => {
         const explorers = [{"name": "Woopa1","stacks": ["javascript","reasonML","elm"]},
-          {"name": "Woopa2","stacks": ["javascript","groovy","elm"]},
-          {"name": "Woopa3","stacks": ["elixir","groovy","reasonML"]}]
+            {"name": "Woopa2","stacks": ["javascript","groovy","elm"]},
+            {"name": "Woopa3","stacks": ["elixir","groovy","reasonML"]}];
         const elixsers = ExplorerService.getExplorersByStack(explorers, "elixir");
         const jsers = ExplorerService.getExplorersByStack(explorers, "javascript");
 
