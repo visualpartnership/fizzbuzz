@@ -7,4 +7,10 @@ describe("Tests para ExplorerService", () => {
         expect(explorersInNode.length).toBe(1);
     });
 
+    test("Obtener los explorers por stack", () => {
+        const explorers = [{stack: "node"}];
+        const explorersInNode = ExplorerService.getExplorersByStack(explorers, "node");
+        expect(explorersInNode.length).toBe(1);
+    });
+
 });
