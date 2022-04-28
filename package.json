@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "node ./lib/server.js",
-    "test": "jest",
-    "linter": "eslint ./**/*.js",
-    "linter-fix": "eslint ./**/*.js --fix"
+    "test": "node ./node_modules/.bin/jest",
+    "linter": "node ./node_modules/eslint/bin/eslint.js",
+    "linter-fix": "node ./node_modules/eslint/bin/eslint.js . --fix",
+    "server": "node ./lib/server.js"
   },
   "keywords": [],
   "author": "",
