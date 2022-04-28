@@ -18,12 +18,12 @@ describe("Tests para ExplorerService", () => {
     test("2.3) FilterByStack invalid params", () => {
         const explorers = [{"name": "Woopa1" ,"mission": "node"}];
         const res = ExplorerService.filterByStack(explorers, 1);
-        expect(res).toMatch(/mission should be a string/);
+        expect(res).toMatch(/stack should be a string/);
     });
     test("2.4) FilterByStack invalid mission", () => {
         const explorers = [{"name": "Woopa1" ,"mission": "node"}];
         const res = ExplorerService.filterByStack(explorers, "");
-        expect(res).toMatch(/invalid mission/);
+        expect(res).toMatch(/invalid stack/);
     });
     test("2.5) FilterByStack correct params ", () => {
         const explorers = [
