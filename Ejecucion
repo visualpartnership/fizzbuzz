@@ -1,0 +1,11 @@
+- Primero se creo al prueba de unidad que nos permitiria conocer el buen funcionamiento del metodo deseado
+
+- Tras crear la prueba se ideo la manera de filtrar la lista de explorers que contuviera el stack deseado, siendo el stack una entrada por parte del usuario para que busque tantos    stacks como guste
+
+- Para lo anterior utilice una idea similar a lo que se hizo con el filtrado de explorers por mision (ExporerService.filterByMission) solo que con el agregado del metodo '.include' para asegurarnos que tomo solo aquellos que contiene el stack que se busca
+
+- Dado que lo que nos interesa es solo el nombre de usuario se hizo uso de '.map' para quedarnos solamente con el nombre de usuario del epxlorer
+
+- Despues de hacer esto y ver que a prueba funcionara se creo en ExploerController un metodo que llamase al metodo antes descrito
+
+- Posteriormente se creo el endpoint con el cual se puede acceder a esta informacion, en dicho endpint se coloca el stack de interes para que el api nos despliegue la informacion que deseamos
