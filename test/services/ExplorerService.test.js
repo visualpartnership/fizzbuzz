@@ -12,7 +12,6 @@ describe("Tests para ExplorerService", () => {
         const stack = "javascript";
         const explorerStack = ExplorerService.filterByStack(explorers, stack);
         
-        console.log(explorerStack);
         expect(explorerStack[explorerStack.length-1].stacks).toContain("javascript");
     });
 
