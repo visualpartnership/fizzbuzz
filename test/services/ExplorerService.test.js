@@ -7,4 +7,25 @@ describe("Tests para ExplorerService", () => {
         expect(explorersInNode.length).toBe(1);
     });
 
+    test("Requerimiento 2: Regresar todos los explorers que tengan en stack el valor recibido en la url", () => {
+        const explorers = [{
+            "stacks": [
+              "javascript",
+              "reasonML",
+              "elm"
+            ]
+          },
+          {
+            "stacks": [
+              "javascript",
+              "groovy",
+              "elm"
+            ]
+          }]
+        let explorersWithStack = ExplorerService.filterByStack(explorers, "javascript")
+        expect(explorersWithStack.length).toBe(2)
+        explorersWithStack = ExplorerService.filterByStack(explorers, "reasonML")
+        expect(explorersWithStack.length).toBe(1)
+    })
+
 });
