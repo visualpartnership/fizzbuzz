@@ -8,12 +8,27 @@ describe("Tests para ExplorerService", () => {
     });
 
     test("Nuevo requerimiento: Obtener una lista de explorers filtrado por Stack", () => {
-        const explorers = [
+        const explorers1 = [
             { stack: ["Node", "javascript"] }, 
             { stack:["python"] }, 
             { stack: ["javascript", "java"] }
         ];
-        const explorersStack = ExplorerService.filterByStack(explorers, 'javascript');
-        expect(explorersStack.length).toBe(2)
+
+        const explorers2 = [
+            { stack: ["java", "typescript", "javascript"]}, 
+            { stack:["node", "jest"]},
+            { stack: ["javascript", "java"]},
+            { stack: ["ruby", "java", "c"]},
+            { stack: ["elixir", "rust"]},
+            { stack: ["c#", "rust", "c"]},
+            { stack: ["javascript", "node", 'vue']}
+        ];
+
+
+        const explorersStack1 = ExplorerService.filterByStack(explorers1, 'javascript');
+        expect(explorersStack1.length).toBe(2)
+
+        const explorersStack2 = ExplorerService.filterByStack(explorers2, 'java');
+        expect(explorersStack2.length).toBe(3)
     })
 });
