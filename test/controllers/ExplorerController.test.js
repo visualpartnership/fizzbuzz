@@ -8,11 +8,11 @@ describe("Pruebas unitarias Explorer Controller",()=>{
     });
    
     test("test para validar score",()=>{
-        const score = 1
-        const explorerscore = ExplorerController.applyFizzbuzz(score)
-        expect(explorerscore).toBe(1)
+        const score = 1;
+        const explorerscore = ExplorerController.applyFizzbuzz(score);
+        expect(explorerscore).toBe(1);
 
-    })
+    });
 
     
 

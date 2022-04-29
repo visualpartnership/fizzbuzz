@@ -7,4 +7,4 @@ describe("Tests Para Reader", () => {
         const explorersInNode = Reader.readJsonFile("explorers.json");
         expect(explorersInNode.length).toBe(15);
     });
-})
+});
