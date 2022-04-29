@@ -10,9 +10,7 @@ describe("Tests para ExplorerService", () => {
     test("Nuevo requerimiento: debe de filtrar los explorers dado un stack", () => { 
         
         const explorers = [{name: "explorer1", stack: ["javascript", "c"]}, {name: "explorer2", stack: ["java"]}, {name: "explorer3", stack: ["javascript"]}];
-        const explorersByStack = ExplorerService.getAmountOfExplorersByStack(explorers, "javascript");
-
-        // const explorersFiltred = explorers.filter(explorer => explorer.stack.includes("javascript"));
+        const explorersByStack = ExplorerService.getExplorersByStack(explorers, "javascript");
 
         expect(explorersByStack.every(explorer => explorer.stack.includes("javascript"))).toBe(true);
     });
