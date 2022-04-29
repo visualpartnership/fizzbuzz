@@ -1,12 +1,9 @@
-const ExplorerService = require("./../lib/services/ExplorerService");
-const Reader = require("./../lib/utils/reader");
+const ExplorerController = require("./../lib/controllers/ExplorerController");
 
 describe("Testing stack endpoint", () => {
 
     test("Obtain explorer if includes stack", () => {
-        const explorers = Reader.readJsonFile("explorers.json");
-        const explorerstack = ExplorerService.getExplorersByStack(explorers, "javascript");
-
+        const explorerstack = ExplorerController.getExplorersByStack("javascript");
         expect(explorerstack[0].name).toBe("Woopa1");
     });
 
