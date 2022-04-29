@@ -9,14 +9,14 @@ describe("Tests para ExplorerService", () => {
     
     test("Requerimiento 4: obtener todo los explorers en un stack", () => {
         const explorers = [
-        {"nombre":'woopa1',"stack":'java'},
-        {"nombre":'woopa2',"stack":'javascript'},
-        {"nombre":'woopa3',"stack":'java'},
-        {"nombre":'woopa4',"stack":'javascript'},
-        {"nombre":'woopa5',"stack":'java'},
-        {"nombre":'woopa6',"stack":'elixir'}
+        {"nombre":'woopa1',"stacks":['java','elixir','python']},
+        {"nombre":'woopa2',"stacks":['javascript','golang','ruby']},
+        {"nombre":'woopa3',"stacks":['java','elixir','python']},
+        {"nombre":'woopa4',"stacks":['javascript','golang','ruby']},
+        {"nombre":'woopa5',"stacks":['java','elixir','python']},
+        {"nombre":'woopa6',"stacks":['javascript','golang','ruby']}
         ];
         const explorersWithStackJava = ExplorerService.filterByStack(explorers,'java');
-        expect(explorersWithStackJava[0].stack).toBe('java');
+        expect(explorersWithStackJava[0].stacks[0]).toBe('java');
     });
 });
