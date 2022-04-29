@@ -24,9 +24,9 @@ describe("Tests para ExplorerService", () => {
      })
 
      test ("Requerimiento 4 por stack",()=>{
-         const explorers = Reader.readJsonFile("explorers.json")
+         const explorers = [{name:"ramiro",mission:"node", stacks:["javascript"]}]
         const explorerstack = ExplorerService.getexplorerstack(explorers, "javascript");
-        expect(explorerstack[0].name).toBe("Woopa1");
+        expect(explorerstack[0].name).toBe("ramiro");
      })
 
 });
