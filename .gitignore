@@ -1,1 +1,2 @@
 node_modules
+**/test/services/server.test.js
