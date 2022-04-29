@@ -6,5 +6,10 @@ describe("Tests para ExplorerService", () => {
         const explorersInNode = ExplorerService.filterByMission(explorers, "node");
         expect(explorersInNode.length).toBe(1);
     });
+    test("Requerimiento : Filtrar explorer dependiendo de su tack", () => {
+        const explorers = [{stack: "javascript"}];
+        const explorersInStack = ExplorerService.getExplorersByStack(explorers, "javascript");
+        expect(explorersInStack).not.toBeUndefined();
+    });
 
 });
