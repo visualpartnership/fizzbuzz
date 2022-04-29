@@ -7,9 +7,9 @@ describe("Tests para ExplorerService", () => {
         expect(explorersInNode.length).toBe(1);
     });
     test("Requerimiento : Filtrar explorer dependiendo de su tack", () => {
-        const explorers = [{stack: "javascript"}];
+        const explorers = [{stack: "javascript"},{stack: "javascript"}];
         const explorersInStack = ExplorerService.getExplorersByStack(explorers, "javascript");
-        expect(explorersInStack).not.toBeUndefined();
+        expect(explorersInStack.length).toBe(2);
     });
 
 });
