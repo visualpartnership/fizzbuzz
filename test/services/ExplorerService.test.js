@@ -13,7 +13,7 @@ describe("Tests para ExplorerService", () => {
             { stack:["python"] }, 
             { stack: ["javascript", "java"] }
         ];
-        const explorersStack = ExplorerService.filterByStack(explorers);
+        const explorersStack = ExplorerService.filterByStack(explorers, 'javascript');
         expect(explorersStack.length).toBe(2)
     })
 });
