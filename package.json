@@ -1,7 +1,7 @@
 {
   "name": "fizzbuzz",
   "version": "1.0.0",
-  "description": "",
+  "description": "1. Instalar dependencia:",
   "main": "index.js",
   "scripts": {
     "test": "node ./node_modules/.bin/jest",
@@ -18,5 +18,17 @@
   },
   "dependencies": {
     "express": "^4.17.3"
-  }
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/a-ceron/fizzbuzz.git"
+  },
+  "bugs": {
+    "url": "https://github.com/a-ceron/fizzbuzz/issues"
+  },
+  "homepage": "https://github.com/a-ceron/fizzbuzz#readme"
 }
