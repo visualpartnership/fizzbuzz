@@ -1,4 +1,4 @@
-const Reader = require("./../../lib/utils/Reader");
+const Reader = require("./../../../lib/utils/reader");
 
 describe("Pruebas unitarias para el Reader", () => {
     test("Requerimiento 1: Contar los datos de muestra", () => {
