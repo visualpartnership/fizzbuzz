@@ -1,7 +1,7 @@
 {
   "name": "fizzbuzz",
   "version": "1.0.0",
-  "description": "",
+  "description": "Consiste en un ejercicio basado en una aplicación existente y lo que se tenia que hacer es refactorizar el código",
   "main": "index.js",
   "scripts": {
     "test": "node ./node_modules/.bin/jest",
@@ -10,11 +10,12 @@
     "server": "node ./lib/server.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "GerardoCabreraH",
   "license": "ISC",
   "devDependencies": {
     "eslint": "^8.14.0",
-    "jest": "^27.5.1"
+    "jest": "^27.5.1",
+    "supertest": "^6.2.3"
   },
   "dependencies": {
     "express": "^4.17.3"
