@@ -9,8 +9,8 @@ describe("Tests para ExplorerService", () => {
 
     test('Requerimiento 2: Obtener los explorers que se encuentres en una misión en especifica', () => {
 
-        let explorers = ExplorerService.filterByStack(null, null);
-        expect(explorers).toEqual([]);
+        let result = ExplorerService.filterByStack(null, null);
+        expect(result).toEqual([]);
 
         result = ExplorerService.filterByStack();
         expect(result).toEqual([]);
@@ -38,7 +38,7 @@ describe("Tests para ExplorerService", () => {
         expect(result[0].stacks).toContain('javascript');
 
         result = ExplorerService.filterByStack(explorers, 'groovy');
-        expect(result.length).toBe(2);
+        expect(result.length).toBe(1);
         expect(result[0].stacks).toContain('groovy');
 
     })
