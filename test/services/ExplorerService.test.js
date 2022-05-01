@@ -32,7 +32,7 @@ describe("Tests para ExplorerService", () => {
               ]
             }];
         const result = ExplorerService.getExplorersFilterByStack(explorers, "javascript");
-        expect(result.length).toBe(11);
+        expect(result.length).toBe(2);
         expect(result).toEqual(
             expect.arrayContaining([
                 expect.objectContaining({
