@@ -30,4 +30,16 @@ describe("Tests para ExplorerService", () => {
         const explorersInJava = ExplorerService.getAmountOfExplorersByMission(explorers, "java");
         expect(explorersInJava).toBe(1);
     });
+
+    test("Requerimiento 6: Obtener la cantidad de explorers con el stack java", () => {
+        const explorers = [{githubUsername: "ajolonauta1", mission: "java", stacks: ["java", "reasonML", "elm"]}];
+        const explorersInJava = ExplorerService.getExplorersByStack(explorers, "java");
+        expect(explorersInJava.length).toBe(1);
+    });
+
+    test("Requerimiento 7: Obtener los explorers con el stack java", () => {
+        const explorers = [{githubUsername: "ajolonauta1", mission: "java", stacks: ["java", "reasonML", "elm"]}];
+        const explorersInJava = ExplorerService.getExplorersByStack(explorers, "java");
+        expect(explorersInJava).toStrictEqual([{githubUsername: "ajolonauta1", mission: "java", stacks: ["java", "reasonML", "elm"]}]);
+    });
 });

@@ -45,4 +45,14 @@ describe("Test para ExplorerController", () => {
         const explorer15Validate = ExplorerController.applyFizzbuzz(15);
         expect(explorer15Validate).toBe("FIZZBUZZ");
     });
+
+    test("prueba 10: Obtener la cantidad de explorers con el stack java", () => {
+        const explorersInJava = ExplorerController.getExplorersByStack("java");
+        expect(explorersInJava.length).toBe(0);
+    });
+
+    test("prueba 11: Obtener la cantidad de explorers con el stack javascript", () => {
+        const explorersInJava = ExplorerController.getExplorersByStack("javascript");
+        expect(explorersInJava.length).toBe(11);
+    });
 });
