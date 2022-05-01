@@ -4,7 +4,7 @@ describe("Pruebas de unidad para la clase ExplorerController", () => {
 
     test("Validar funcionalidad getExplorersFilterByStack", () => {        
         const result = ExplorerController.getExplorersFilterByStack("javascript");
-        expect(result.length).toBe(10);
+        expect(result.length).toBe(11);
         expect(result).toEqual(
             expect.arrayContaining([
                 expect.objectContaining({
