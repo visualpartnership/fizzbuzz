@@ -7,4 +7,12 @@ describe("Tests para ExplorerService", () => {
         expect(explorersInNode.length).toBe(1);
     });
 
+    test("Requerimiento 2: Retornar todos los explorers que contengan cierta tecnologia" , () => {
+        const explorers = [{stacks: ["javascript"]} ,{stacks: ["elixir"]} , {stacks: ["java"]} , {stacks: ["javascript"]} ];
+        const explorersJavascriptInStack = ExplorerService.filterByTechology(explorers , "javascript");
+        explorersJavascriptInStack.forEach( explorer => {
+            expect(explorer.stacks).toContain("javascript");
+        });
+        expect(explorersJavascriptInStack.length).toEqual(2);
+    });
 });
