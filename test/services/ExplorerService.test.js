@@ -43,7 +43,7 @@ describe('Tests para ExplorerService', () => {
     ];
 
     const explorersWithJavaScriptInStack = ExplorerService.getExplorersByValueInStack(explorers, 'javascript');
-    const explorersWithGroobyInStack = ExplorerService.getExplorersByValueInStack(explorers, 'grooby');
+    const explorersWithGroobyInStack = ExplorerService.getExplorersByValueInStack(explorers, 'groovy');
     const explorersWithElmInStack = ExplorerService.getExplorersByValueInStack(explorers, 'elm');
     const explorersWithJavaInStack = ExplorerService.getExplorersByValueInStack(explorers, 'java');
 
