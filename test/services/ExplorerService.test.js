@@ -10,5 +10,5 @@ describe("Tests para ExplorerService", () => {
     const explorersWithJavascript = ExplorerService.filterByStack(explorers, "javascript");
     test.each(explorersWithJavascript)("Requerimiento: Crear un endpoint nuevo que regrese toda la lista de explorers filtrados por un stack", (explorer) => {
         expect(explorer.stacks).toContain("javascript");
-    })
+    });
 });
