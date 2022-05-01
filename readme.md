@@ -7,7 +7,7 @@
 El endpoint regresa en formato json todos los explorers que contengan en su stack el valor
 que se envia por el parametro :value
 
-![Ejemplo]("./Capture.PNG")
+![Ejemplo](/Capture.PNG)
 
 
 ## Proceso
