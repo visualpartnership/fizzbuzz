@@ -6,5 +6,16 @@ describe("Tests para ExplorerService", () => {
         const explorersInNode = ExplorerService.filterByMission(explorers, "node");
         expect(explorersInNode.length).toBe(1);
     });
-
+    test("Requerimiento 2: Obtener el stack del explorer", () =>{
+        const explorer = {stack: [
+            "javascript",
+            "groovy",
+            "elm"
+        ]};
+        expect(ExplorerService.getStack(explorer.stack)).toEqual([
+            "javascript",
+            "groovy",
+            "elm"
+        ]);
+    });
 });
