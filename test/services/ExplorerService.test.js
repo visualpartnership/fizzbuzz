@@ -11,7 +11,7 @@ describe("Tests para ExplorerService", () => {
     test("Prueba de unidad para el metodo de filtrado por stack",()=>{
         const explorers = Reader.readJsonFile("explorers.json");
         explorersInStack = ExplorerService.getExplorersByStack(explorers,"javascript");
-        expect(explorersInNode.length).toBe(11);
+        expect(explorersInStack.length).toBe(11);
     })
 
 });
