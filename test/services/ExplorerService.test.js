@@ -7,8 +7,8 @@ describe("Tests para ExplorerService", () => {
         expect(explorersInNode.length).toBe(1);
     });
     test("Requerimiento 2: Obtener todos los explorers con cierto stack", () => {
-        const explorers = [{name: "explorer1", stack: "java"}, {name: "explorer2", stack:"javascript"}, {name: "explorer3", stack: "java"}];
+        const explorers = [{stacks: ["java", "javascript"]}, {stacks:["javascript", "css"]}, {stacks: ["java"]}];
         const explorersInJava = ExplorerService.filterByStack(explorers, "java");
-        expect(explorersInJava).toEqual([{name: "explorer1", stack:"java"}, {name: "explorer3", stack: "java"}]);
+        expect(explorersInJava).toEqual([{stacks: ["java", "javascript"]}, {stacks: ["java"]}]);
     });
 });
