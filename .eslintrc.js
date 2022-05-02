@@ -3,6 +3,7 @@ module.exports = {
         "browser": true,
         "commonjs": true,
         "es2021": true,
+        "jest": true,
         "node": true
     },
     "extends": "eslint:recommended",
@@ -10,9 +11,10 @@ module.exports = {
         "ecmaVersion": "latest"
     },
     "rules": {
+        "no-unused-vars": "off",
         indent: ["error", 4],
         "linebreak-style": ["error", "unix"],
         quotes: ["error", "double"],
         semi: ["error", "always"]
     }
-}
+};
