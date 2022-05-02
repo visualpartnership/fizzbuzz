@@ -1,16 +1,21 @@
-# Linter
+# FizzBuzz Contribution
 
-1. Instalar dependencia:
+Add new endpoint to get all the explorers with a specific stack.
+The user can select wich stack wants to search.
+Contains a test with jest to check if the function is working.
+`npm test`
 
-> npm install eslint --save-dev
+To run the server:
+`npm run server`
 
-2. Modificar package.json, agregar debajo de test
+| Endpoint | Request | Response |
+|---|---|---|
+| `localhost:3000/v1/explorers/stack/:stack` | `localhost:3000/v1/explorers/stack/javascript` | All explorers contains javascript in their stack |
 
-> "linter": "node ./node_modules/eslint/bin/eslint.js"
+```mermaid
+graph TD;
+    ExplorerService-->ExplorerController
+    ExplorerController-->Server
+```
 
-3. Crear configuración en archivo .eslintrc (si se versiona)
-
-> npm init @eslint/config
-
-Rules: https://eslint.org/docs/rules/
-Airbnb Code Style: https://github.com/airbnb/javascript
+![image](./img/Endpoint.png)
