@@ -8,3 +8,9 @@ describe("Tests para ExplorerService", () => {
     });
 
 });
+describe("Test de ExplorerService", () => {
+    test("Nombre de explorers por Stack", () =>{
+        const nameExplorersByStack = ExplorerService.getExplorersByStack(explorers, "elm");
+        expect(nameExplorersByStack).toContain("ajolonauta6");
+    }); 
+});
