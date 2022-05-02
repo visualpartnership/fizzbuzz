@@ -7,8 +7,8 @@ describe("Tests para ExplorerService", () => {
         expect(explorersInNode.length).toBe(1);
     });
     test("Requerimiento 2: Lista explorers por stack", () => {
-        const explorers = [{mission: "node", stack: "javascript"}, {mission: "node", stack: "frontend"}];
-        const explorersContainsJavaScript = explorers.filter(explorer => explorer.stack === "javascript");
+        const explorers = [{mission: "node", stack: "javascript, python"}, {mission: "node", stack: "frontend"}];
+        const explorersContainsJavaScript = explorers.filter(explorer => explorer.stack.includes("javascript"));
         expect(explorersContainsJavaScript.length).toBe(1);
     });
 });
