@@ -16,12 +16,13 @@ describe("Tests para ExplorerService", () => {
         expect(res).toMatch(/explorers cannot be an empty array/);
     });
     test("2.3) FilterByStack invalid params", () => {
-        const explorers = [{"name": "Woopa1" ,"mission": "node"}];
+        const explorers = [{stacks: ["node"]}];
         const res = ExplorerService.filterByStack(explorers, 1);
+        console.log(res)
         expect(res).toMatch(/stack should be a string/);
     });
     test("2.4) FilterByStack invalid mission", () => {
-        const explorers = [{"name": "Woopa1" ,"mission": "node"}];
+        const explorers = [{stacks: ["node"]}];
         const res = ExplorerService.filterByStack(explorers, "");
         expect(res).toMatch(/invalid stack/);
     });
