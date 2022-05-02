@@ -15,7 +15,7 @@ To run the server:
 ```mermaid
 graph TD;
     ExplorerService-->ExplorerController
-    ExplorerController-->Server (New endpoint)
+    ExplorerController-->Server
 ```
 
 ![image](./img/Endpoint.png)
