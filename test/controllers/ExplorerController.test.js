@@ -25,15 +25,15 @@ describe("Tests para ExplorerController", () => {
     });
 
     test("Regresar cadena de texto con los usuarios de cada mision" , ()=> {
-        const mision1 = 'java';
+        const mision1 = 'node';
         const usernamesInMisionBotResponse1 = ExplorerController.botResponseUsernamesInMission(mision1);
-        const correctResult1 = `Los usernames de los explorers en la mision ${mision1} son: `
+        let correctResult1 = `Los usernames de los explorers en la mision ${mision1} son: `
         correctResult1 += 'ajolonauta1, ajolonauta2, ajolonauta3, ajolonauta4, ajolonauta5, ajolonauta11, ajolonauta12, ajolonauta13, ajolonauta14, ajolonauta15'
         expect(usernamesInMisionBotResponse1).toBe(correctResult1);
 
-        const mision2 = 'node';
-        const usernamesInMisionBotResponse2 = ExplorerController.botResponseUsernamesInMission(mision1);
-        const correctResult2 = `Los usernames de los explorers en la mision ${mision2} son: `
+        const mision2 = 'java';
+        const usernamesInMisionBotResponse2 = ExplorerController.botResponseUsernamesInMission(mision2);
+        let correctResult2 = `Los usernames de los explorers en la mision ${mision2} son: `
         correctResult2 += 'ajolonauta6, ajolonauta7, ajolonauta8, ajolonauta9, ajolonauta10'
         expect(usernamesInMisionBotResponse2).toBe(correctResult2);
     });
