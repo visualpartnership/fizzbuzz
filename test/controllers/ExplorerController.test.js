@@ -24,4 +24,18 @@ describe("Tests para ExplorerController", () => {
         expect(fizzbuzzBotResponse4).toBe(`Tu número es: ${number4}. Validación: ${ExplorerController.applyFizzbuzz(number4)}`);
     });
 
+    test("Regresar cadena de texto con los usuarios de cada mision" , ()=> {
+        const mision1 = 'java';
+        const usernamesInMisionBotResponse1 = ExplorerController.botResponseUsernamesInMission(mision1);
+        const correctResult1 = `Los usernames de los explorers en la mision ${mision1} son: `
+        correctResult1 += 'ajolonauta1, ajolonauta2, ajolonauta3, ajolonauta4, ajolonauta5, ajolonauta11, ajolonauta12, ajolonauta13, ajolonauta14, ajolonauta15'
+        expect(usernamesInMisionBotResponse1).toBe(correctResult1);
+
+        const mision2 = 'node';
+        const usernamesInMisionBotResponse2 = ExplorerController.botResponseUsernamesInMission(mision1);
+        const correctResult2 = `Los usernames de los explorers en la mision ${mision2} son: `
+        correctResult2 += 'ajolonauta6, ajolonauta7, ajolonauta8, ajolonauta9, ajolonauta10'
+        expect(usernamesInMisionBotResponse2).toBe(correctResult2);
+    });
+
 });
