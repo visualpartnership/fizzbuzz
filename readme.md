@@ -14,3 +14,5 @@
 
 Rules: https://eslint.org/docs/rules/
 Airbnb Code Style: https://github.com/airbnb/javascript
+
+'''i = 7'''
