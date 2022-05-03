@@ -1,12 +1,21 @@
 # Linter
 
-1. Instalar dependencia:
+1. Instalar dependencias:
 
-> npm install eslint --save-dev
+> npm install eslint --save-dev  
+> npm install dotenv --save  
+> npm install jest --save-dev  
+> npm install eslint --save-dev  
+> npm install express --save  
+> npm install node-telegram-bot-api --save  
 
-2. Modificar package.json, agregar debajo de test
+2. Modificar package.json, agregar en scripts: 
 
-> "linter": "node ./node_modules/eslint/bin/eslint.js"
+> "test": "node ./node_modules/.bin/jest",  
+> "linter": "node ./node_modules/eslint/bin/eslint.js",  
+> "linter-fix": "node ./node_modules/eslint/bin/eslint.js . --fix",  
+> "server": "node ./lib/server.js",  
+> "bot": "node ./lib/bot.js"  
 
 3. Crear configuración en archivo .eslintrc (si se versiona)
 
