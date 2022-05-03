@@ -1,0 +1,24 @@
+[
+    {
+      "name": "Woopa1",
+      "githubUsername": "ajolonauta1",
+      "score": 1,
+      "mission": "node",
+      "stacks": [
+        "javascript",
+        "reasonML",
+        "elm"
+      ]
+    },
+    {
+        "name": "Woopa3",
+        "githubUsername": "ajolonauta3",
+        "score": 3,
+        "mission": "node",
+        "stacks": [
+          "elixir",
+          "groovy",
+          "reasonML"
+        ]
+      }
+]
