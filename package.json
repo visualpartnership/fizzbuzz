@@ -1,10 +1,17 @@
 {
   "name": "fizzbuzz",
   "version": "1.0.0",
+<<<<<<< HEAD
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "node ./node_modules/.bin/jest",
+=======
+  "description": "1. Instalar dependencia:",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./node_modules/jest/bin/jest",
+>>>>>>> e9e4243 (Se agrego servicio y pruebas para poder validar perfectamente el servicio)
     "linter": "node ./node_modules/eslint/bin/eslint.js",
     "linter-fix": "node ./node_modules/eslint/bin/eslint.js . --fix",
     "server": "node ./lib/server.js"
@@ -14,9 +21,29 @@
   "license": "ISC",
   "devDependencies": {
     "eslint": "^8.14.0",
+<<<<<<< HEAD
     "jest": "^27.5.1"
   },
   "dependencies": {
     "express": "^4.17.3"
   }
+=======
+    "jest": "^26.0.0"
+  },
+  "dependencies": {
+    "express": "^4.17.3"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oscardanielM/fizzbuzzContribucion.git"
+  },
+  "bugs": {
+    "url": "https://github.com/oscardanielM/fizzbuzzContribucion/issues"
+  },
+  "homepage": "https://github.com/oscardanielM/fizzbuzzContribucion#readme"
+>>>>>>> e9e4243 (Se agrego servicio y pruebas para poder validar perfectamente el servicio)
 }
