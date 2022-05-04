@@ -1,13 +1,13 @@
 {
   "name": "fizzbuzz",
   "version": "1.0.0",
-  "description": "",
+  "description": "1. Instalar dependencia:",
   "main": "index.js",
   "scripts": {
-    "test": "node ./node_modules/.bin/jest",
-    "linter": "node ./node_modules/eslint/bin/eslint.js",
-    "linter-fix": "node ./node_modules/eslint/bin/eslint.js . --fix",
-    "server": "node ./lib/server.js"
+    "server": "node ./lib/server.js",
+    "test": "node --experimental-vm-modules ./node_modules/jest/bin/jest",
+    "linter": "node ./node_modules/eslint/bin/eslint.js .",
+    "linter-fix": "node ./node_modules/eslint/bin/eslint.js . --fix"
   },
   "keywords": [],
   "author": "",
@@ -18,5 +18,17 @@
   },
   "dependencies": {
     "express": "^4.17.3"
-  }
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AntGtz/fizzbuzz.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AntGtz/fizzbuzz/issues"
+  },
+  "homepage": "https://github.com/AntGtz/fizzbuzz#readme"
 }
