@@ -13,7 +13,7 @@ describe("Tests para ExplorerController", () => {
         expect(explorersWithStack).toBe("No hay explorers con misión sdfsdfsdfs");
     });
 
-    test("Requerimiento 2: Bot. Obtener explorers por mision (válida)", () => {
+    test("Requerimiento 3: Bot. Obtener explorers por mision (válida)", () => {
         const mision = "node";
         const explorersWithStack = ExplorerController.botExplorersByMission(mision);
         expect(explorersWithStack).toContain("Woopa12");
