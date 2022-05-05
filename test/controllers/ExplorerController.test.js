@@ -9,13 +9,19 @@ describe("Tests para ExplorerController", () => {
 
     test("Requerimiento 2: Bot. Obtener explorers por mision (inexistente)", () => {
         const mision = "sdfsdfsdfs";
-        const explorersWithStack = ExplorerController.botExplorersByMission(mision);
-        expect(explorersWithStack).toBe("No hay explorers con misión sdfsdfsdfs");
+        const explorersWitMission = ExplorerController.botExplorersByMission(mision);
+        expect(explorersWitMission).toBe("No hay explorers con misión sdfsdfsdfs");
     });
 
     test("Requerimiento 3: Bot. Obtener explorers por mision (válida)", () => {
         const mision = "node";
-        const explorersWithStack = ExplorerController.botExplorersByMission(mision);
-        expect(explorersWithStack).toContain("Woopa12");
+        const explorersWithMission = ExplorerController.botExplorersByMission(mision);
+        expect(explorersWithMission).toContain("Woopa12");
+    });
+
+    test("Requerimiento 4: Bot FizzBuzz", () => {
+        const score = "15";
+        const calificacion = ExplorerController.botFizzBuzz(score);
+        expect(calificacion).toBe("Tu número es: 15. Validación: FIZZBUZZ");
     });
 });
