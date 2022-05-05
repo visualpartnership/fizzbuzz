@@ -11,7 +11,7 @@ describe("Tests para ExplorerService", () => {
 
     test("Requerimiento 2: Listar los explorers filtrados por un stack", () => {
         
-        const explorers = Reader.readJsonFile('explorers.json');
+        const explorers = Reader.readJsonFile("explorers.json");
         const explorersByStack = ExplorerService.getExplorersByStack(explorers, "javascript");
         expect(explorersByStack[0].stacks).toContain("javascript");
         
