@@ -62,15 +62,19 @@ Para realizar los primeros 4 requerimientos, se hace uso de unas funciones en la
 # Evidencia de funcionamiento
 
 1. Requerimiento 1
+
 ![image](https://user-images.githubusercontent.com/25083316/167066212-75286783-d155-49d6-a365-369f85769d24.png)
 
 2. Requerimiento 2
+
 ![image](https://user-images.githubusercontent.com/25083316/167066261-a129bf6e-15c8-4524-8346-9a26f28c2986.png)
 
 3. Requerimiento 3
+
 ![image](https://user-images.githubusercontent.com/25083316/167066307-44ada8ae-66f1-490e-8707-26cb6b7a7082.png)
 
 4. Requerimiento 4
+
 ![image](https://user-images.githubusercontent.com/25083316/167066345-87832fa1-0b9c-470c-a938-8392cfe47faf.png)
 
 El quinto requerimiento también se encuentra dentro de esta clase, pero dado que la entrada es el número en el mensaje recibido, y la salida debe ser la cadena de respuesta que dará el bot, la funcionalidad cambia un poco con respecto a los anteriores; esta función determinará si la consulta devuelve un resultado o si no, y se lo informará al usuario:
@@ -93,6 +97,7 @@ El quinto requerimiento también se encuentra dentro de esta clase, pero dado qu
 # Evidencia de funcionamiento
 
 1. Requerimiento 5
+
 ![WhatsApp Image 2022-05-05 at 1 04 13 PM](https://user-images.githubusercontent.com/25083316/167066440-9722e483-6991-4c4f-b8ca-1fd4c5d03ac6.jpeg)
 
 Por último, el sexto requerimiento debe poderse consultar tanto desde la API como desde el bot de Telegram. Para el primer caso, la funcionalidad de este está en una clase llamada FizzbuzzService, el cual contiene la siguiente lógica para poder cumplir con las condiciones que solicita el requerimiento:
@@ -114,6 +119,7 @@ Por último, el sexto requerimiento debe poderse consultar tanto desde la API co
 # Evidencia de funcionamiento
 
 1. Requerimiento 6
+
 ![image](https://user-images.githubusercontent.com/25083316/167066647-420cfbab-8045-4397-a89e-85f7cdc90b32.png)
 
 Y para el caso del bot de Telegram, este solo recibirá el número por medio de un mensaje, y deberemos entonces responder con la validación correspondiente. Esta lógica se encuentra en la misma clase que el caso anterior:
@@ -140,6 +146,7 @@ De esta forma, validamos el número entrante, revisamos el caso en donde cae, y 
 # Evidencias de funcionamiento
 
 1. Requerimiento 6
+
 ![WhatsApp Image 2022-05-03 at 5 52 17 PM](https://user-images.githubusercontent.com/25083316/167066818-018ea2ec-1bcb-42fe-915c-70753ba2a786.jpeg)
 
 Nota: Cabe destacar en este último caso que el requerimiento solicitaba en un inicio que, cualquier cadena entrante que no fuera número, devolviera un mensaje solicitando una entrada válida (razón por la cual en la captura anterior se aprecia dicho mensaje cuando se envía la cadena "Casa", por ejemplo). Esto fue descartado al recibir el nuevo requerimiento de que la validación FIZZBUZZ también formara parte del refactoring para el bot de Telegram, por lo que ahora cualquier cadena de texto entrante, la tratará como una misión a la cual deberá devolver el listado de explorers inscritos en ella.
