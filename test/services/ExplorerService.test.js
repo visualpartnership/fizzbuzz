@@ -8,7 +8,7 @@ describe("Tests para ExplorerService", () => {
     });
     test("Requerimiento : Filtrar los explrers por stack javascript ",() =>{
         const explorersStack = ExplorerService.filterByStack(explorers, "javascript");
-        expect(explorersStack.stack = "javascript").toMatch(/script/);
+        expect(explorersStack.stack = "javascript").toMatch(/javascript/);
     });
 
 });
