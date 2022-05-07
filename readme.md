@@ -28,24 +28,24 @@ Crea un endpoint nuevo que regrese toda la lista de explorers filtrados por un s
 Ejemplo de url: localhost:3000/v1/explorers/stack/javascript.
 Response: Todos los explorers que tengan en stack el valor recibido en la url: javascript. (este valor debe ser dinámico)
 
-# Descripción de solición
+# Descripción de solución
 
-1. Intale eslint
+1. Instale eslint
 2. Modifique el corazón del proyecto, en package.json agregue la referencia para lint y edite "test" para poder hacer uso de jest, ya que tengo el sistema operativo de Windows 10 y con la que tenia no funciona jest.
 
 ![image](https://user-images.githubusercontent.com/99162884/167275275-92fb5182-5938-4998-99a0-e62e68e6541b.png)
 
-3. Agregue una prueba unitaria para el nuevo requerimento de método GET que filtre los explorers que tengan stack dinamico.
+3. Agregue una prueba unitaria para el nuevo requerimiento de método GET que filtre los explorers que tengan stack dinámico.
 
-Primero la hice fallar, lo que me solicito fue crear el metodo porque no existia (Paso 4).
+Primero la hice fallar, lo que me solicito fue crear el método porque no existía (Paso 4).
 
-Segundo la hice fallar mandandole stack no existente.
+Segundo la hice fallar mandándole stack no existente.
 
 Tercero hice que la prueba pasará.
 
 ![image](https://user-images.githubusercontent.com/99162884/167275338-be91c6d2-2aeb-405d-84ed-7201136033d2.png)
 
-4. En el servicio 'ExplorerService', cree el método filterByStack, el cual recibirá la lista de explorers y un valor stack, apartir de ahi crea una lista nueva filtrada con la condición de traer todos los explorers que incluyan en su arreglo stack, el valor de stack solicitado por el usuario(javascrit, elixir etc).
+4. En el servicio 'ExplorerService', cree el método filterByStack, el cual recibirá la lista de explorers y un valor stack, a partir de ahí crea una lista nueva filtrada con la condición de traer todos los explorers que incluyan en su arreglo stack, el valor de stack solicitado por el usuario(javascrit, elixir etc).
 
 ![image](https://user-images.githubusercontent.com/99162884/167275411-2787e890-f518-4ad9-9d4d-83ef7bb21da1.png)
 
@@ -76,6 +76,5 @@ Stack: javascript
 
 
 ![image](https://user-images.githubusercontent.com/99162884/167275718-ac0076ed-8339-4036-9a2f-29a301148128.png)
-
 
 
