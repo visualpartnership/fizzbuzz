@@ -31,7 +31,7 @@ Response: Todos los explorers que tengan en stack el valor recibido en la url: j
 # Descripción de solición
 
 1. Intale eslint
-2. Modifique el corazón del proyecto, en package.json agregue la refrencia para lint y edite "test" para poder hacer uso de jest, ya que tengo el sistema operativo de Windows 10 y con la que tenia no funciona jest.
+2. Modifique el corazón del proyecto, en package.json agregue la referencia para lint y edite "test" para poder hacer uso de jest, ya que tengo el sistema operativo de Windows 10 y con la que tenia no funciona jest.
 
 ![image](https://user-images.githubusercontent.com/99162884/167275275-92fb5182-5938-4998-99a0-e62e68e6541b.png)
 
