@@ -7,4 +7,9 @@ describe("Tests para ExplorerService", () => {
         expect(explorersInNode.length).toBe(1);
     });
 
+    const explorersWithJavascript = ExplorerService.getExplorersByStack(explorers, "javascript");
+    test.each(explorersWithJavascript)("Requerimiento 2.%#) explorers filtrados por un stack ", (explorer) => {
+        expect(explorer.stacks).toContain("javascript");
+    });
+
 });
