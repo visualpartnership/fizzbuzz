@@ -2,12 +2,12 @@
   "name": "fizzbuzz",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
+    "start": "nodemon ./lib/server.js",
     "test": "node ./node_modules/.bin/jest",
     "linter": "node ./node_modules/eslint/bin/eslint.js",
     "linter-fix": "node ./node_modules/eslint/bin/eslint.js . --fix",
-    "server": "node ./lib/server.js"
   },
   "keywords": [],
   "author": "",
