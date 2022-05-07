@@ -6,12 +6,12 @@ describe("Tests para ExplorerService", () => {
         const explorersInNode = ExplorerService.filterByMission(explorers, "node");
         expect(explorersInNode.length).toBe(1);
     });
-    
+
     test("Test para probar nueva funcionalidad=> todos los explorers que tengan en stack el valor recibido en la url: javascript", () =>{
-        const explorers =[{name: "Woopa1", stacks: [ "javascript","reasonML","elm"]},{ name: "Woopa2",stacks: [ "javascript","groovy","elm" ]},
-                        {name: "Woopa3",stacks: ["elixir","groovy","reasonML" ]}];
-        const explorersStack = ExplorerService.filterByStack(explorers,"javascript");
-        expect(explorersStack).toBe(1);
+        const explorers =[{name: "Woopa1", stacks: [ "javascript","reasonML","elm"]}, { name: "Woopa2",stacks: [ "javascript","groovy","elm" ]},
+        {name: "Woopa3",stacks: ["elixir","groovy","reasonML" ]}];
+        const explorersStack = ExplorerService.filterByStack(explorers,"noExisto");
+        expect(explorersStack.length).toBe(2);
     });
 
 });
