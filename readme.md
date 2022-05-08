@@ -3,7 +3,7 @@ Se modificaron los archivos "ExplorerController.js", "ExplorerService.js" y "Exp
 
 1.- "ExplorerController.js":
 
-![alt text] https://github.com/FelipeReyesMi/Fizzbuzz-/blob/master/imagenes/explorerController.png
+![alt text](https://github.com/FelipeReyesMi/Fizzbuzz-/blob/master/imagenes/explorerController.png)
 # Linter
 
 1. Instalar dependencia:
