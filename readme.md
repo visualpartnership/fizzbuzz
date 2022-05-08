@@ -1,3 +1,6 @@
+# Resultados
+Se modificaron los archivos "ExplorerController.js", "ExplorerService.js" y "ExplorerService.test.js"
+
 # Linter
 
 1. Instalar dependencia:
