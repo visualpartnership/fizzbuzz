@@ -13,6 +13,10 @@ Se modificaron los archivos "ExplorerController.js", "ExplorerService.js" y "Exp
 
 ![Screenshot](https://github.com/FelipeReyesMi/Fizzbuzz-/blob/master/imagenes/test.png)
 
+El resultado que nos arroja nuestro nuevo endpoint, es el siguiente:
+
+![Screenshot]()
+
 
 # Linter
 
