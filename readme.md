@@ -9,6 +9,10 @@ Se modificaron los archivos "ExplorerController.js", "ExplorerService.js" y "Exp
 
 ![Screenshot](https://github.com/FelipeReyesMi/Fizzbuzz-/blob/master/imagenes/explorerServices.png)
 
+3.- "ExplorerService.test.js":
+
+![Screenshot](https://github.com/FelipeReyesMi/Fizzbuzz-/blob/master/imagenes/test.png)
+
 
 # Linter
 
