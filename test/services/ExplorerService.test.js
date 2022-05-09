@@ -8,3 +8,15 @@ describe("Tests para ExplorerService", () => {
     });
 
 });
+
+describe("Nuevo requerimiento: Listas de explorers filtrados por stack", () =>{
+    test("Comprueba existencia del metodo", () =>{
+        const result = typeof ExplorerService.filterByStack;
+        expect(result).toBe("function");
+    });
+
+    test("Sin formato minimo del objeto a filtrar", () =>{
+        const result = ExplorerService.filterByStack(null, null);
+        expect(result).toBeUndefined();
+    });
+});
