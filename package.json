@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node ./node_modules/.bin/jest",
+    "test": "node ./node_modules/jest/bin/jest.js",
     "linter": "node ./node_modules/eslint/bin/eslint.js",
     "linter-fix": "node ./node_modules/eslint/bin/eslint.js . --fix",
     "server": "node ./lib/server.js"
@@ -13,7 +13,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "eslint": "^8.14.0",
+    "eslint": "^8.15.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
     "jest": "^27.5.1"
   },
   "dependencies": {
