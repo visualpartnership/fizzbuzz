@@ -10,7 +10,7 @@ describe("Tests para ExplorerService", () => {
     });
 
     test('Prueba obteniendo explorers que tienen un stack en específico', () => {
-        const explorers = Reader.readJsonFile('./data/ExplorersFileTest.json')
+        const explorers = Reader.readJsonFile('./test/data/ExplorersFileTest.json')
         const explorersInStack = ExplorerService.getExplorersByStack(explorers, 'elm')
 
         expect(explorersInStack).toContain('elm')
