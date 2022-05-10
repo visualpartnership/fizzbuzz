@@ -1,3 +1,5 @@
+#Configuracion En Proceso para avance en el resto del Proyecto
+
 # Linter
 
 1. Instalar dependencia:
