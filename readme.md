@@ -1,3 +1,23 @@
+# Resultados
+Se modificaron los archivos "ExplorerController.js", "ExplorerService.js" y "ExplorerService.test.js"
+
+1.- "ExplorerController.js":
+
+![banner](https://github.com/FelipeReyesMi/Fizzbuzz-/blob/master/imagenes/explorerController.png)
+
+2.- "ExplorerService.js":
+
+![Screenshot](https://github.com/FelipeReyesMi/Fizzbuzz-/blob/master/imagenes/explorerServices.png)
+
+3.- "ExplorerService.test.js":
+
+![Screenshot](https://github.com/FelipeReyesMi/Fizzbuzz-/blob/master/imagenes/test.png)
+
+El resultado que nos arroja nuestro nuevo endpoint, es el siguiente:
+
+![Screenshot](https://github.com/FelipeReyesMi/Fizzbuzz-/blob/master/imagenes/result.png)
+
+
 # Linter
 
 1. Instalar dependencia:
