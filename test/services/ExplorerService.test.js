@@ -7,8 +7,8 @@ describe("Tests para ExplorerService", () => {
         expect(explorersInNode.length).toBe(1);
     }),
     test("Requerimiento 2: Retornar los explorers que tengan javascript en su stack", () => {
-        const explorers = [{stack: ["javascript"]}, {stack: ["javascript", "elm"]}, {stack: ["elm"]}];
-        const explorersInJS = ExplorerService.getExplorersUsernamesByStack(explorers, "javascript");
+        const explorers = [{stacks: ["javascript"]}, {stacks: ["javascript", "elm"]}, {stacks: ["elm"]}];
+        const explorersInJS = ExplorerService.filterByStack(explorers, "javascript");
         expect(explorersInJS.length).toBe(2);
     });
 });
