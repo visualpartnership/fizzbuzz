@@ -6,5 +6,9 @@ describe("Tests para ExplorerService", () => {
         const explorersInNode = ExplorerService.filterByMission(explorers, "node");
         expect(explorersInNode.length).toBe(1);
     });
-
+    test("Requerimiento 1: Devolver todos los explorers que tengan un valor específico en su campo stacks", () => {
+        const explorers = [{stacks: ["elixir", "javascript"]}];
+        const explorersJavascriptInStacks = ExplorerService.getExplorersByStack(explorers, "javascript");
+        expect(explorersJavascriptInStacks).toMatchObject([{stacks: ["elixir", "javascript"]}]);
+    });
 });
