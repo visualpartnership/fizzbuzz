@@ -29,7 +29,7 @@ describe("Tests para ExplorerService", () => {
     test("5 : Muestra a los explores en un stack", () => {
         const explorer = [{"stacks":"javascript"}];
         const explorersInNode = ExplorerService.filterByStack(explorer, "javascript");
-        expect(explorersInNode).toContainEqual({"stacks":"javascript"})
+        expect(explorersInNode).toContainEqual({"stacks":"javascript"});
     });
 
 });
