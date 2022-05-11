@@ -10,19 +10,19 @@ describe("Tests para ExplorerService", () => {
     test("Requerimiento 2: Obtener explorers por filtro de stack", ()=>{
         const explorers = [
             {
-              "name": "Woopa1",
-              "githubUsername": "ajolonauta1",
-              "score": 1,
-              "mission": "node",
-              "stacks": [
-                "javascript",
-                "reasonML",
-                "elm"
-              ]
+                "name": "Woopa1",
+                "githubUsername": "ajolonauta1",
+                "score": 1,
+                "mission": "node",
+                "stacks": [
+                    "javascript",
+                    "reasonML",
+                    "elm"
+                ]
             }
-        ]
-        const filtered_explorers = ExplorerService.filterByStack(explorers, "javascript")
-        expect(filtered_explorers).toEqual(explorers)
-    })
+        ];
+        const filtered_explorers = ExplorerService.filterByStack(explorers, "javascript");
+        expect(filtered_explorers).toEqual(explorers);
+    });
 
 });
