@@ -18,6 +18,7 @@
     "jest": "^27.5.1"
   },
   "dependencies": {
+    "dotenv": "^16.0.1",
     "express": "^4.17.3",
     "node-telegram-bot-api": "^0.57.0"
   }
