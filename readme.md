@@ -4,6 +4,11 @@ Crear un endpoint que regrese la lista de explorers filtrados por un stack
 
 # Procedimiento
 
+1. Modificar el archivo package.json en la linea de "test" pues en windows 10 hay que cambiar la dirección para que pueda funcionar jest.
+
+2. Agregar prueba para el nuevo requerimiento, esta se crea en el archivo ExplorerService.test.js y tiene que filtrar los explorers que tengan el stack que se indique.
+
+
 
 
 # Linter
