@@ -1,3 +1,11 @@
+# Requerimiento: 
+
+Crear un endpoint que regrese la lista de explorers filtrados por un stack
+
+# Procedimiento
+
+
+
 # Linter
 
 1. Instalar dependencia:
