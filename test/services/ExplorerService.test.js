@@ -14,7 +14,7 @@ describe("Tests para ExplorerService", () => {
             {name: "Woopa3", stacks: ["javascript", "groovy", "elm"]}
             ];
         const explorersInJavascript = ExplorerService.getExplorersByStack(explorers, "javascript");
-        expect(explorersInJavascript.length).toEqual(2);
+        expect(explorersInJavascript.length).to(2);
         expect(explorersInJavascript).toEqual([{name: "Woopa1", stacks: ["javascript", "groovy", "elm"]},
             {name: "Woopa3", stacks: ["javascript", "groovy", "elm"]}]);
     });
