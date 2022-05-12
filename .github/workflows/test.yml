@@ -1,6 +1,6 @@
 name: Run Tests in my project every push on GitHub
 
-on: [push, pull_request]
+on: [push]
 
 jobs:
   build:
