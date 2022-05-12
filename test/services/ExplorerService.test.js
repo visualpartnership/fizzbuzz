@@ -6,5 +6,10 @@ describe("Tests para ExplorerService", () => {
         const explorersInNode = ExplorerService.filterByMission(explorers, "node");
         expect(explorersInNode.length).toBe(1);
     });
-
+    
+    test("Requerimiento 2: Obtener todos los explorers con cierto stack", () => {
+        const explorers = [{stacks: ["javascript","reasonML","elm"]}];
+        const explorersWithStack = ExplorerService.getExplorersbyStack(explorers, "reasonML");
+        expect(explorersWithStack.length).toBe(1);
+    });
 });
