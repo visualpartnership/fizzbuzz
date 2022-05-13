@@ -10,6 +10,7 @@ Crear un endpoint que regrese la lista de explorers filtrados por un stack
 > npm install --save -dev jest
 
 2. Modificamos el archivo package.json en la linea de "test" pues en windows 10 hay que cambiar la dirección para que pueda funcionar jest.
+![image](https://github.com/CeViMu/fizzbuzz-1/blob/master/images/Imagen2.png)
 
 3. Agregamos prueba para el nuevo requerimiento, esta se crea en el archivo ExplorerService.test.js y tiene que filtrar los explorers que tengan el stack que se indique.
 
