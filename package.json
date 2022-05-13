@@ -4,19 +4,24 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node ./node_modules/.bin/jest",
-    "linter": "node ./node_modules/eslint/bin/eslint.js",
-    "linter-fix": "node ./node_modules/eslint/bin/eslint.js . --fix",
-    "server": "node ./lib/server.js"
+    "test": "jest",
+    "linter": "eslint .",
+    "linter-fix": "eslint . --fix",
+    "server": "node ./lib/server.js",
+    "bot": "node ./lib/bot.js"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "IS",
   "devDependencies": {
     "eslint": "^8.14.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
     "jest": "^27.5.1"
   },
   "dependencies": {
-    "express": "^4.17.3"
+    "dotenv": "^16.0.1",
+    "express": "^4.17.3",
+    "node-telegram-bot-api": "^0.57.0"
   }
 }
