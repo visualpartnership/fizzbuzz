@@ -8,7 +8,7 @@ describe("Tests para ExplorerService", () => {
         expect(explorersInNode.length).toBe(1);
     });
 
-    test("Requerimiento 2: Retornar Lista de Explorers que contengan en Stack el valor proporcionado", () => {
+    test("Requerimiento 2: Retornar Lista de Explorers que contengan ens Stack el valor proporcionado", () => {
         const explorersList = Reader.readJsonFile("explorers.json");
         const stack = "javascript";
         const explorersInStack = ExplorerService.getExplorersByStack(explorersList, stack);
