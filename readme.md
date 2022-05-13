@@ -31,25 +31,22 @@ Crear un endpoint que regrese la lista de explorers filtrados por un stack
  Abrimos la dirección localhost:3000/v1/explorers/stack/javascript.
 
 11. Verificamos que las pruebas automatizadas de GitHub funcionen y pasen.
-11. Corremos linter
+
+12. Instalamos linter
+>npm install eslint --save-dev
+
+ Modificamos package.json, agregar debajo de test
+ > "linter": "node ./node_modules/eslint/bin/eslint.js"
+
+ Crear configuración en archivo .eslintrc
+ > npm init @eslint/config
+
+ Corremos linter
  > npm run linter
+
  Arreglamos el estilo de nuestro proyecto
  > npm run linter -fix
 
-
-# Linter
-
-1. Instalar dependencia:
-
-> npm install eslint --save-dev
-
-2. Modificar package.json, agregar debajo de test
-
-> "linter": "node ./node_modules/eslint/bin/eslint.js"
-
-3. Crear configuración en archivo .eslintrc (si se versiona)
-
-> npm init @eslint/config
 
 Rules: https://eslint.org/docs/rules/
 Airbnb Code Style: https://github.com/airbnb/javascript
