@@ -10,10 +10,19 @@ module.exports = {
         "ecmaVersion": "latest"
     },
     "rules": {
-        "no-unused-vars": "off",
-        indent: ["error", 4],
+        indent : ["error", 4],
         "linebreak-style": ["error", "unix"],
         quotes: ["error", "double"],
-        semi: ["error", "always"]
+        semi: ["error", "always"],
+        "multiline-comment-style": ["error", "bare-block"],
+        camelcase: "warn",
+        eqeqeq: ["error", "always"],
+        "func-call-spacing": ["error", "always"],
+        "one-var": ["error", "consecutive"],
+        "no-cond-assign": ["error", "always"],
+        "no-console": "error",
+        "no-extra-parens": "error",
+        "no-constant-condition": "error",
+        "no-dupe-args": "error"
     }
-};
+}
