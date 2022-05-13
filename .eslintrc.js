@@ -20,9 +20,8 @@ module.exports = {
         "func-call-spacing": ["error", "always"],
         "one-var": ["error", "consecutive"],
         "no-cond-assign": ["error", "always"],
-        "no-console": "error",
         "no-extra-parens": "error",
         "no-constant-condition": "error",
         "no-dupe-args": "error"
     }
-}
+};
