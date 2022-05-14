@@ -1,16 +1,39 @@
-# Linter
+**STEAKS**
 
-1. Instalar dependencia:
+Se agrega una nueva url para buscar dentro del archivo **explorers.json** atraves del campo stacks.
 
-> npm install eslint --save-dev
+```
+http://localhost:3000/v1/explorers/steak/javascript
+```
 
-2. Modificar package.json, agregar debajo de test
+Se crea una función **static** dentro del **ExplorerService.js**
 
-> "linter": "node ./node_modules/eslint/bin/eslint.js"
+```
+static steack(explorers,mission){
+	constexplorerBySteak =  explorers.filter((explorer)=>explorer.stacks.includes(mission));
+	returnexplorerBySteak;
+ }
+```
 
-3. Crear configuración en archivo .eslintrc (si se versiona)
+Agrego la función **stack** dentro del **ExplorerController**
 
-> npm init @eslint/config
+```
+    static stack(lenguage){
+        const explorers = Reader.readJsonFile("explorers.json");
+        return ExplorerService.steack(explorers,lenguage)
+    }
+```
 
-Rules: https://eslint.org/docs/rules/
-Airbnb Code Style: https://github.com/airbnb/javascript
+Configuro la ruta dentro del **server.js, localhost:3000/v1/explorers/steak/**
+
+que recibe como parametro el campo que puede contener el steak
+
+```
+app.get("/v1/explorers/steak/:mission",(request, response)=>{
+    const mission = request.params.mission;
+    const result =  ExplorerController.stack(mission);
+    response.json(result);
+});
+```
+
+
