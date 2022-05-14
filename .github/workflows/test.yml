@@ -20,4 +20,6 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Run install dependecies
+      run: npm install
+    - name: Run server
       run: npm run server 
