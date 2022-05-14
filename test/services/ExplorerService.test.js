@@ -6,5 +6,10 @@ describe("Tests para ExplorerService", () => {
         const explorersInNode = ExplorerService.filterByMission(explorers, "node");
         expect(explorersInNode.length).toBe(1);
     });
+    test("Nuevo Requerimiento: devolver todos los explorers con el stack javascript", () => {
+        const explorers = [{stacks: ["java", "ruby", "javascript"]}, {stacks: ["java", "ruby", "python"]}, {stacks: ["ruby", "rails"]}];
+        const explorersJS = ExplorerService.filterByStack(explorers, "javascript");
+        expect(explorersJS.length).toBe(1);
+    });
 
 });
