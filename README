@@ -1,0 +1,31 @@
+# Hola esta es mi solucion
+
+- Primero creo un metodo llamado "filterByStack"
+- Segundo este metodo recibe 2 parametros los cuales son: "explorers" y "stack"
+- El siguiente punto es que trabajaremos a base del filtrado, es decir filtraremos los explorers que
+  cumplan con las condiciones.
+- Luego usaremos el arreglo de stacks veremos si el stack que buscamos, existe en este arreglo
+
+<img title="a title" alt="Alt text" width='600px' src="./imgReadme/methodFilterByStack.png">
+
+Luego en la clase "ExplorerController.js" agregamos la nueva funcion para pasarla a la ruta:
+
+<img title="a title" alt="Alt text" width='600px' src="./imgReadme/methodFilterByStackController.png">
+
+Aqui si nos damos cuenta solo pasamos el stack, pasamos el parametro de la ruta que deseamos filtrar
+
+Luego en nuestro controlador va a quedar con la nueva ruta:
+
+<img title="a title" alt="Alt text" width='600px' src="./imgReadme/appController.png">
+
+## Resultado final
+
+Pruebas:
+
+Este sera el resultado con javascript
+
+<img title="a title" alt="Alt text" width='600px' src="./imgReadme/Resultados.png">
+
+Este sera el resultado con Elm
+
+<img title="a title" alt="Alt text" width='600px' src="./imgReadme/ResultadoElm.png">
