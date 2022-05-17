@@ -4,17 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node ./node_modules/.bin/jest",
+    "server": "node ./lib/server.js",
+    "test": "node ./node_modules/.bin/jest --forceExit --maxWorkers=1 --detectOpenHandles",
     "linter": "node ./node_modules/eslint/bin/eslint.js",
-    "linter-fix": "node ./node_modules/eslint/bin/eslint.js . --fix",
-    "server": "node ./lib/server.js"
+    "linter-fix": "node ./node_modules/eslint/bin/eslint.js . --fix"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "eslint": "^8.14.0",
-    "jest": "^27.5.1"
+    "jest": "^27.5.1",
+    "supertest": "^6.2.3"
   },
   "dependencies": {
     "express": "^4.17.3"
