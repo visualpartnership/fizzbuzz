@@ -8,8 +8,8 @@ describe("Tests para ExplorerService", () => {
     });
     test("Endpoint Nuevo: Calcular la lista de explorers filtrados por un stack", () => {
         const explorers = [{mission: "node"}];
-        const explorersInNode = ExplorerService.filterByMission(explorers, "node");      
-        expect(explorersInNode.length).toBe(1);
+        const explorersStackNode = ExplorerService.getListExplorersByStack(explorers, "node");      
+        expect(explorersStackNode.length).toBe(1);
     });
 });
 
