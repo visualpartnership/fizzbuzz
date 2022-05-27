@@ -17,10 +17,23 @@ describe("Tests para ExplorerService", () => {
               "reasonML",
               "elm",
             ]
-        }]
-        const explorersByStackJavascript = ExplorerService.getListExplorersByStack(explorerData, "javascript");      
-        expect(explorerData[0].stacks).toEqual("elm")
-        //expect(explorerData[0].stacks).toEqual(expect.arrayContaining(["elm"]));
+        },
+        {
+            name: "Woopa2",
+            githubUsername: "ajolonauta2",
+            score: 1,
+            mission: "node",
+            stacks: [
+              "elixir",
+              "elm",
+              "javascript"
+            ]
+        }
+        
+        ]
+        const explorersByStackJavascript = ExplorerService.getListExplorersByStack(explorerData, "javascript");        
+        expect(explorerData[0].stacks).toEqual(expect.arrayContaining(["javascript"]));   
+        expect(explorersByStackJavascript).toHaveLength(2)           
     });
 });
 
