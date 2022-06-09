@@ -11,7 +11,7 @@ describe("Tests para ExplorerService", () => {
 	const explorers=Reader.readJsonFile("explorers.json");
         const explorersInStackE = ExplorerService.getExplorersByStack(explorers,"elixir");
         const explorersAmountInStackE = explorersInStackE.length;
-        expect(explorersAmountInStackE.length).toBe(9);
+        expect(explorersAmountInStackE).toBe(9);
     });
 
 });
