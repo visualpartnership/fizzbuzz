@@ -2,6 +2,8 @@ const Reader = require("../../lib/utils/reader");
 const ExplorerService = require("./../../lib/services/ExplorerService");
 
 describe("Tests para ExplorerService", () => {
+    const explorers = Reader.readJsonFile("explorers.json");
+    
     test("Requerimiento 1: Calcular todos los explorers en una misión", () => {
         const explorers = [{mission: "node"}];
         const explorersInNode = ExplorerService.filterByMission(explorers, "node");
@@ -9,8 +11,6 @@ describe("Tests para ExplorerService", () => {
     });
 
     test("Requerimiento 4: Calcular todos los explorers que tengan en stack un valor recibido", () => {
-        const explorers = Reader.readJsonFile("explorers.json");
-
         const explorersByStacks = ExplorerService.getExplorersByStacks(explorers, "javascript");
         expect(explorersByStacks).toEqual([
             {
@@ -147,9 +147,11 @@ describe("Tests para ExplorerService", () => {
                 ]
             }
         ]);
-
-        expect(explorersByStacks.length).toBe(11);
-
     });
+
+    test('Requerimiento 4: Obtener la cantidad de explorers que tengan en stack un valor recibido', () => {
+        const explorersByStacks = ExplorerService.getExplorersByStacks(explorers, "javascript");
+        expect(explorersByStacks.length).toBe(11);
+    }) 
 
 });
